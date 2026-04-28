@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html, body {
+  min-height: 100%;
+  height: auto;
+  font-family: "Onest", sans-serif; 
+}
+
+html {
+  overflow-x: hidden;
+}
+
+:root {
+  --orange-color: #FF914D;
+  --blue-color: #004AAD;
+  --max-width: 1240px;
+  --btn-border-radius: 10px;
+  --big-border-radius: 30px;
+  --background-gray-color: #EFF1F6;
+  --transform-scale-active: scale(0.97);
+  --transform-scale-hover: scale(1.03);
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+  flex-shrink: 0;
+  background: 0; 
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: var(--transform-scale-hover);
+}
+
+.btn:active {
+  transform: var(--transform-scale-active);
+}
