@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     const backgrounds = [
         '/src/main/bg_1.png',
@@ -7,9 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
         '/src/main/bg_4.png'
     ];
     
-    let currentIndex = 0;
     const firstSection = document.querySelector('.first-section');
-    
+    const circlesWrapper = document.querySelector('.circles-wrapper');
     const circles = document.querySelectorAll('.circles-wrapper svg circle');
     
     const overlay1 = document.createElement('div');
@@ -24,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
     overlay1.style.backgroundImage = `url('${backgrounds[0]}')`;
     overlay2.style.backgroundImage = `url('${backgrounds[1]}')`;
     
-    let nextIndex = 0;
+    let currentIndex = 0;
     
     function updateActiveCircle(index) {
         circles.forEach((circle, i) => {
@@ -38,15 +36,13 @@ document.addEventListener('DOMContentLoaded', function() {
     
     updateActiveCircle(0);
     
-    function changeBackgroundWithSlide() {
-        nextIndex = (nextIndex + 1) % backgrounds.length;
-
-        updateActiveCircle(nextIndex);
+    function changeBackgroundToIndex(targetIndex) {
+        if (targetIndex === currentIndex) return;
         
         const currentActive = document.querySelector('.overlay-active');
         const nextOverlay = currentActive === overlay1 ? overlay2 : overlay1;
         
-        nextOverlay.style.backgroundImage = `url('${backgrounds[nextIndex]}')`;
+        nextOverlay.style.backgroundImage = `url('${backgrounds[targetIndex]}')`;
         
         currentActive.classList.add('slide-out');
         nextOverlay.classList.add('slide-in');
@@ -56,7 +52,24 @@ document.addEventListener('DOMContentLoaded', function() {
             currentActive.classList.remove('slide-out', 'overlay-active');
             nextOverlay.classList.remove('slide-in');
         }, 600);
+        
+        currentIndex = targetIndex;
+        updateActiveCircle(currentIndex);
     }
     
-    setInterval(changeBackgroundWithSlide, 5000);
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % backgrounds.length;
+        changeBackgroundToIndex(nextIndex);
+    }
+    
+    let interval = setInterval(nextSlide, 5000);
+    
+    circles.forEach((circle, index) => {
+        circle.addEventListener('click', function(e) {
+            e.stopPropagation(); 
+            changeBackgroundToIndex(index);
+            clearInterval(interval);
+            interval = setInterval(nextSlide, 5000);
+        });
+    });
 });

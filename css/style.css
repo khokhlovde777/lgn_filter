@@ -25,6 +25,7 @@ html {
   --background-gray-color: #EFF1F6;
   --transform-scale-active: scale(0.97);
   --transform-scale-hover: scale(1.03);
+  --gray-color: #5E6775;
 }
 
 .btn {

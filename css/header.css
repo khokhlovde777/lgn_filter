@@ -1,0 +1,103 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 3;
+}
+
+.header {
+  border-radius: 0 0 var(--big-border-radius) var(--big-border-radius);
+  padding-top: 13px;
+  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content-wrapper {
+  width: 88vw;
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+}
+
+.header-first-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #0A0A0A;
+  opacity: .5;
+}
+
+.header-tel-email-wrapper  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+.header-tel-link-wrapper, .header-email-link-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-tel-img, .header-email-img {
+  width: 16px;
+  height: 16px;
+}
+
+.header-tel-text, .header-email-text, .header-social-network-link-max, .header-social-network-link-telegram {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.header-social-network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header-second-line {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo-img {
+  width: 175px;
+}
+
+.header-links-pages-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 26px;
+}
+
+.header-link-catalog-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-link-catalog, .header-link-product, .header-link-about, .header-link-contacts, .header-link-form {
+  font-size: 16px;
+  font-weight: 400;
+}
