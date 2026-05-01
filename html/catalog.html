@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/catalog.css">
+    <link rel="stylesheet" href="/css/search.css">
+    <title>Каталог</title>
+</head>
+<body>
+    
+    <header class="header">
+      <div class="header-content-wrapper">
+
+        <div class="header-first-line">
+
+          <div class="header-tel-email-wrapper">
+            <div class="btn header-tel-link-wrapper">
+              <img src="/src/header/header_tel_img.svg" class="header-tel-img">
+              <p class="header-tel-text">+7 (495) 123-45-67</p>
+            </div>
+            <div class="btn header-email-link-wrapper">
+              <img src="/src/header/header_email_img.svg" class="header-email-img">
+              <p class="header-email-text">info@lgnfilter.ru </p>
+            </div>
+          </div>
+
+          <div class="header-social-network">
+            <p class="btn header-social-network-link-max">MAX</p>
+            <p class="btn header-social-network-link-telegram">Telegram</p>
+          </div>
+
+        </div>
+
+        <div class="header-second-line">
+          <div class="btn header-logo-wrapper">
+            <img src="/src/header/header-logo.svg" class="header-logo-img">
+          </div>
+          <div class="header-links-pages-wrapper">
+            <div class="btn header-link-catalog-wrapper">
+              <svg class="header-burger" width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.372303 10C0.26657 10 0.178212 9.95414 0.107227 9.86242C0.0362421 9.77069 0.000501497 9.65778 5.09996e-06 9.52367C-0.000491297 9.38957 0.0352493 9.27697 0.107227 9.18588C0.179204 9.09479 0.267563 9.04956 0.372303 9.05019H11.5412C11.647 9.05019 11.7353 9.09574 11.8063 9.18683C11.8778 9.27792 11.9135 9.39083 11.9135 9.52557C11.9135 9.66031 11.8778 9.77291 11.8063 9.86336C11.7348 9.95382 11.6465 9.99905 11.5412 9.99905L0.372303 10ZM0.372303 5.47395C0.26657 5.47395 0.178212 5.42841 0.107227 5.33732C0.0362421 5.24623 0.000501497 5.13331 5.09996e-06 4.99858C-0.000491297 4.86384 0.0352493 4.75124 0.107227 4.66078C0.179204 4.57033 0.267563 4.5251 0.372303 4.5251H11.5412C11.647 4.5251 11.7353 4.57064 11.8063 4.66173C11.8773 4.75282 11.913 4.86574 11.9135 5.00047C11.914 5.13521 11.8783 5.24781 11.8063 5.33827C11.7343 5.42873 11.646 5.47395 11.5412 5.47395H0.372303ZM0.372303 0.947908C0.26657 0.947908 0.178212 0.902679 0.107227 0.812221C0.0357457 0.721131 5.09996e-06 0.608217 5.09996e-06 0.47348C5.09996e-06 0.338742 0.0357457 0.226144 0.107227 0.135687C0.178708 0.045229 0.267067 0 0.372303 0H11.5412C11.647 0 11.7353 0.0455452 11.8063 0.136635C11.8773 0.227726 11.913 0.340007 11.9135 0.47348C11.914 0.606952 11.8783 0.71955 11.8063 0.811272C11.7343 0.902995 11.646 0.94854 11.5412 0.947908H0.372303Z" fill="#0A0A0A"/>
+              </svg>
+               <p class="header-link-catalog">Каталог</p>
+            </div>
+            <p class="btn header-link-product">Продукция</p>
+            <p class="btn header-link-about">О компании</p>
+            <p class="btn header-link-contacts">Контакты</p>
+            <p class="btn header-link-form">Обратный звонок</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+      <div class="first-section">
+        <div class="background-img-png-wrapper">
+          <img src="/src/catalog/background_img.png" class="background-png">
+        </div>
+        <img src="/src/catalog/background_svg.svg" class="background-svg-lines">
+      </div>
+
+      <div class="second-section">
+
+        <div class="search-wrapper">
+          <div class="search-wrapper-up">
+            <div class="label-wrapper">
+              <p class="search-label">Поиск фильтра</p>
+            </div>
+            <div class="search-buttons-wrapper">
+              <button type="button" class="btn btn-search-number"> 
+                <p class="btn-label">
+                  По номеру
+                </p>
+              </button>
+              <button type="button" class="btn btn-search-auto"> 
+                <p class="btn-label">
+                  По марке и модели автомобиля
+                </p>
+              </button>
+            </div>
+          </div>
+  
+          <div class="search-wrapper-down">
+  
+              <form action="" method="get" autocomplete="off" class="search-by-number">
+                <input
+                  class="search-input"
+                  type="text"
+                  placeholder="Введите номер фильтра, его аналог или OEM"
+                  value=""
+                  autocomplete="off"
+                />
+              </form>
+  
+              <form action="" method="get" autocomplete="off" class="search-by-auto">
+                <div class="search-input-car-brend">
+                  <input
+                    class="search-input"
+                    type="text"
+                    placeholder="Выберите марку"
+                    value=""
+                    autocomplete="off"
+                  />
+                  <svg class="search-input-car-brend-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="#6A7282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+  
+                <div class="search-input-car-model">
+                  <input
+                    class="search-input"
+                    type="text"
+                    placeholder="Выберите модель"
+                    value=""
+                    autocomplete="off"
+                  />
+                  <svg class="search-input-car-model-arrow" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0.999999L6 6L11 1" stroke="#6A7282" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+  
+              </form>
+  
+              <button type="button" class="btn btn-search-enter"> 
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14.75 14.75L11.3721 11.3721M11.3721 11.3721C11.9499 10.7944 12.4083 10.1084 12.721 9.35349C13.0337 8.59856 13.1946 7.78944 13.1946 6.97231C13.1946 6.15519 13.0337 5.34606 12.721 4.59114C12.4083 3.83621 11.9499 3.15027 11.3721 2.57247C10.7944 1.99468 10.1084 1.53635 9.35349 1.22365C8.59856 0.910945 7.78944 0.75 6.97231 0.75C6.15519 0.75 5.34606 0.910945 4.59114 1.22365C3.83621 1.53635 3.15027 1.99468 2.57247 2.57247C1.40556 3.73938 0.75 5.32205 0.75 6.97231C0.75 8.62257 1.40556 10.2052 2.57247 11.3721C3.73938 12.5391 5.32205 13.1946 6.97231 13.1946C8.62257 13.1946 10.2052 12.5391 11.3721 11.3721Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="btn-label">
+                  Найти
+                </p>
+              </button>
+  
+          </div>
+        </div>
+
+        <div class="description-wrapper">
+
+          <div class="texts-wrapper">
+            <div class="text-label-wrapper">
+              <p class="text-label">
+                Найдите нужный Вам фильтр
+              </p>
+              <p class="text-description">
+                Простой в использовании каталог, в котором собраны все наши артикулы. Каждый фильтр проверен на совместимость, привязан к оригинальным номерам и популярным аналогам других производителей.
+              </p>
+            </div>
+
+            <div class="details-wrapper">
+
+              <div class="detail-search-wrapper">
+
+                <div class="detail-search-label">
+                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4" r="4" fill="#FF914D"/>
+                  </svg>
+                  <p class="detail-search-label-text">
+                    Поиск по номеру
+                  </p>
+                </div>
+
+                <div class="detail-search-description">
+                  <p class="detail-search-description-description">
+                    Введите артикул фильтра (оригинальный или аналога) в поле «Поиск фильтра по номеру» и нажмите «Найти».
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="detail-search-wrapper">
+
+                <div class="detail-search-label">
+                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="4" cy="4" r="4" fill="#FF914D"/>
+                  </svg>
+                  <p class="detail-search-label">
+                    Поиск по марке и модели автомобиля
+                  </p>
+                </div>
+
+                <div class="detail-search-description">
+                  <p class="detail-search-description-description">
+                    Введите или выберите (из выпадающих списков) марку и модель авто. Система автоматически подберет все варианты и модификации по объему двигателя, коду двигателя, можности и периоду выпуска. 
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div class="description-img-wrapper">
+            <img src="/src/catalog/description-background-img-1.png" class="description-img">
+          </div>
+          <!-- description-background-img-1 -->
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content-wrapper">
+
+        <div class="footer-first-line">
+
+          <div class="footer-logo-catalog-column">
+            <img src="/src/header/header-logo.svg" class="btn footer-logo">
+            <p class="footer-label">Производитель автомобильных фильтров с 2014 года</p>
+            <button type="button" class="btn footer-btn-catalog">
+              Перейти в каталог
+            </button>
+          </div>
+
+          <div class="footer-products-column">
+            <p class="btn footer-column-label">Продукция</p>
+            <div class="footer-column-chapters-wrapper">
+              <p class="btn">Салонные пылевые</p>
+              <p class="btn">Салонные угольные</p>
+              <p class="btn">Салонные антибактекриальные</p>
+              <p class="btn">Салонные противоаллергенные</p>
+              <p class="btn">Воздушные фильтры</p>
+              <p class="btn">Масляные фильтры</p>
+            </div>
+          </div>
+
+          <div class="footer-company-column">
+            <p class="btn footer-column-label">Компания</p>
+            <div class="footer-column-chapters-wrapper">
+              <p class="btn">Сотрудничество</p>
+              <p class="btn">О Компании</p>
+              <p class="btn">Доставка</p>
+              <p class="btn">Контакты</p>
+            </div>
+          </div>
+
+          <div class="footer-contacts-column">
+            <p class="btn footer-column-label">Контакты</p>
+            <div class="footer-column-chapters-wrapper">
+              <p class="btn">+7 (495) 123-45-67</p>
+              <p class="btn">info@lgnfilter.ru</p>
+              <p class="btn">г. Москва, ул. Производственная, д. 1</p>
+            </div>
+          </div>
+
+        </div>
+
+        <hr class="devider">
+
+        <div class="footer-second-line">
+          <p>© 2026 LGN FILTER. Все права защищены.</p>
+          <p class="btn">Политика конфиденциальности</p>
+          <p class="btn">Пользовательское соглашение</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <script src="/js/main/search/inputLogic.js"></script>
+</body>
+</html>
