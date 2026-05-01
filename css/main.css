@@ -264,6 +264,7 @@
   align-items: start;
   justify-content: space-between;
   padding: 35px;
+  transition: all 0.3s ease;
 }
 
 .category-up {
@@ -292,6 +293,75 @@
   position: absolute;
   right: -59px;
   bottom: -85px;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.category-item-anim-img {
+  position: absolute;
+  top: -23px;
+  right: 59px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+/* Ховер эффекты для кнопки */
+.category-item:hover {
+  background-color: var(--orange-color);
+  color: white;
+}
+
+.category-item:hover .category-img {
+  transform: rotate(-7deg) translate(-30px, -30px);
+}
+
+.category-item:hover .category-item-anim-img {
+  transform: rotate(45deg) translate(-60px, -10px);
+}
+
+/* SVG анимация при ховере */
+.category-item .category-down {
+  overflow: visible !important;
+  display: inline-block;
+}
+
+.category-item .category-down svg {
+  overflow: visible !important;
+  transition: all 0.3s ease;
+}
+
+.category-item .category-down svg circle:last-of-type {
+  transition: all 0.3s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.category-item .category-down svg circle:first-of-type {
+  transition: all 0.3s ease;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.category-item .category-down svg path {
+  transition: all 0.3s ease;
+}
+
+/* Эффекты при ховере для SVG */
+.category-item:hover .category-down svg circle:first-of-type {
+  opacity: 0.5 !important;
+}
+
+.category-item:hover .category-down svg circle:last-of-type {
+  opacity: 0 !important;
+  transform: scale(1.5);
+}
+
+.category-item:hover .category-down svg path {
+  fill: white !important;
+}
+
+.category-item:hover .category-down svg circle {
+  stroke: white !important;
 }
 
 .content-wrapper {
@@ -397,6 +467,19 @@
   justify-content: space-between;
   padding: 30px;
   text-align: start;
+}
+
+.partner-item:hover {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+.partner-item:hover .partner-item-up svg circle {
+  stroke: white !important;
+}
+
+.partner-item:hover .partner-item-up svg path {
+  fill: white !important;
 }
 
 .partner-item-up {
