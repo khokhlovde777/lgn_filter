@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/search.css">
+    <link rel="stylesheet" href="/css/form.css">
     <title>Каталог</title>
 </head>
 <body>
@@ -138,65 +139,110 @@
           </div>
         </div>
 
-        <div class="description-wrapper">
+        <div class="info-section">
 
-          <div class="texts-wrapper">
-            <div class="text-label-wrapper">
-              <p class="text-label">
+          <div class="info-section__left">
+
+            <div class="info-section__header">
+              <p class="info-section__title">
                 Найдите нужный Вам фильтр
               </p>
-              <p class="text-description">
+              <p class="info-section__description">
                 Простой в использовании каталог, в котором собраны все наши артикулы. Каждый фильтр проверен на совместимость, привязан к оригинальным номерам и популярным аналогам других производителей.
               </p>
             </div>
 
-            <div class="details-wrapper">
-
-              <div class="detail-search-wrapper">
-
-                <div class="detail-search-label">
-                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="info-section__methods">
+              
+              <div class="method-card">
+                <div class="method-card__header">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="#FF914D"/>
                   </svg>
-                  <p class="detail-search-label-text">
+                  <p class="method-card__title">
                     Поиск по номеру
                   </p>
                 </div>
-
-                <div class="detail-search-description">
-                  <p class="detail-search-description-description">
-                    Введите артикул фильтра (оригинальный или аналога) в поле «Поиск фильтра по номеру» и нажмите «Найти».
-                  </p>
-                </div>
-
+                <p class="method-card__description">
+                  Введите артикул фильтра (оригинальный или аналога) в поле «Поиск фильтра по номеру» и нажмите «Найти».
+                </p>
               </div>
 
-              <div class="detail-search-wrapper">
-
-                <div class="detail-search-label">
-                   <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="method-card">
+                <div class="method-card__header">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="4" cy="4" r="4" fill="#FF914D"/>
                   </svg>
-                  <p class="detail-search-label">
+                  <p class="method-card__title">
                     Поиск по марке и модели автомобиля
                   </p>
                 </div>
-
-                <div class="detail-search-description">
-                  <p class="detail-search-description-description">
-                    Введите или выберите (из выпадающих списков) марку и модель авто. Система автоматически подберет все варианты и модификации по объему двигателя, коду двигателя, можности и периоду выпуска. 
-                  </p>
-                </div>
-
+                <p class="method-card__description">
+                  Введите или выберите (из выпадающих списков) марку и модель авто. Система автоматически подберет все варианты и модификации по объему двигателя, коду двигателя, мощности и периоду выпуска.
+                </p>
               </div>
 
             </div>
+
           </div>
 
-          <div class="description-img-wrapper">
-            <img src="/src/catalog/description-background-img-1.png" class="description-img">
+          <div class="info-section__right">
+            <img src="/src/catalog/description-background-img-1.png" class="info-section__image" alt="Каталог фильтров">
           </div>
-          <!-- description-background-img-1 -->
+
+        </div>
+
+        <div class="form-wrapper" style="margin-top: 27px; margin-bottom: 40px;">
+
+          <p class="form-wrapper__title">Запрос полного каталога в Excel</p>
+
+          <div class="form-wrapper__content">
+            
+            <div class="form-wrapper__left">
+              
+              <p class="form-wrapper__description">
+                После заполнения формы менеджер предоставит общий каталог нашей продукции
+              </p>
+    
+              <form action="" method="get" autocomplete="off" class="form-wrapper__form">
+                
+                <div class="request-form__field">
+                  <input type="text" class="request-form__input" placeholder="Имя *" autocomplete="off">
+                </div>
+                
+                <div class="request-form__field">
+                  <input type="email" class="request-form__input" placeholder="Email *" autocomplete="off">
+                </div>
+                
+                <div class="request-form__field">
+                  <input type="tel" class="request-form__input" placeholder="Телефон *" autocomplete="off">
+                </div>
+                
+                <div class="request-form__field">
+                  <input type="text" class="request-form__input" placeholder="Название организации *" autocomplete="off">
+                </div>
+                
+                <div class="request-form__checkbox-group">
+                  <input type="checkbox" id="privacy" class="request-form__checkbox">
+                  <label for="privacy" class="request-form__checkbox-label">
+                    <span class="request-form__checkbox-text">
+                      Я согласен с условиями Политики конфиденциальности
+                    </span>
+                  </label>
+                </div>
+                
+                <button type="submit" class="btn request-form__submit">
+                  Отправить
+                </button>
+                
+              </form>
+            </div>
+  
+            <img src="/src/form/form__img.png" class="form-wrapper__img">
+    
+          </div>
+
+          
         </div>
 
       </div>
