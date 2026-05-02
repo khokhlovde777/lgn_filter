@@ -2,9 +2,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   background-color: white;
   z-index: 3;
+  width: 100vw;
 }
 
 .header {
@@ -95,6 +95,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  position: relative;
 }
 
 .header-link-catalog, .header-link-product, .header-link-about, .header-link-contacts, .header-link-form {
