@@ -91,14 +91,43 @@
 }
 
 .header-link-catalog-wrapper {
+  position: relative;
+}
+
+.link-catalog__text {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
-  position: relative;
 }
 
 .header-link-catalog, .header-link-product, .header-link-about, .header-link-contacts, .header-link-form {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__menu-wrapper {
+  position: absolute;
+  left: 0;
+  top: 49px;
+  background-color: white;
+  border-radius: 0 0 var(--btn-border-radius) var(--btn-border-radius);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+  width: 382px;
+  transition: all .3s ease;
+}
+
+.menu-wrapper__item {
+  width: 100%;
+}
+
+.menu-wrapper__item-text {
+  text-align: start;
   font-size: 16px;
   font-weight: 400;
 }
