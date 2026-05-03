@@ -1,0 +1,244 @@
+.content-wrapper {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-gray-color);
+}
+
+.item-section {
+  width: 88vw;
+  max-width: var(--max-diwth);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 23px;
+  margin-top: 150px;
+}
+
+.item-section__imgs-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.img-gallery-slider {
+  width: 100%;
+  max-width: 453px;
+  height: 453px;
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--big-border-radius);
+}
+
+.img-gallery__slides {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img-gallery__item {
+  height: 100%;
+}
+
+.item__img {
+  max-width: 453px;
+}
+
+.img-gallery__sliders {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.img-gallery__arrow--left {
+  height: 85px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.img-gallery__arrow--right {
+  height: 85px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.gallery-sliders__imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  max-width: 286px;
+    overflow: hidden;
+}
+
+.slide-item {
+  position: relative;
+  overflow: hidden;
+  max-width: 85px;
+  max-height: 85px;
+  border-radius: 10px;
+}
+
+.slide-item__img {
+  width: 100%;
+}
+
+.gallery-sliders__imgs.swiper-initialized {
+  display: block;
+}
+
+.gallery-sliders__imgs .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.gallery-sliders__imgs .swiper-slide {
+  width: auto !important;
+  height: auto !important;
+  flex-shrink: 0;
+}
+
+.gallery-sliders__imgs .swiper-slide {
+  margin-right: 16px;
+}
+
+.gallery-sliders__imgs .swiper-slide:last-child {
+  margin-right: 0;
+}
+
+.img-gallery__slides.swiper-initialized {
+  display: block;
+}
+
+.img-gallery__slides .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.img-gallery__slides .swiper-slide {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-sliders__imgs .swiper-slide-thumb-active .slide-item {
+  border: 2px solid #364153;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+.contacts-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 32px 32px 32px 64px;
+  box-sizing: border-box;
+  width: 88vw;
+  max-width: var(--max-width);
+  border-radius: var(--big-border-radius);
+  background-color: var(--blue-color);
+  margin: 40px 0;
+}
+
+.text-and-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 50px;
+}
+
+.texts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 40px;
+}
+
+.contact-label {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tel-number {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.mail-wrapper, .location-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.contact-img-wrapper {
+  width: 14px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+.mail-img, .location-img {
+  width: 100%;
+  height: 100%;
+}
+
+.mail-text, .location-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.btn-requisits {
+  color: white;
+  padding: 18px 74px;
+  border-radius: var(--btn-border-radius);
+  background-color: #3474C7;
+}
+
+.map-wrapper {
+  position: relative;
+  border-radius: 20px;
+  width: 45.97%;
+  min-width: 410px;
+}
+
+.map-img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-absolute-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
