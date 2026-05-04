@@ -1,0 +1,67 @@
+.popup-properties-company {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #00000030;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.popup-properties__wrapper {
+  width: 64.23vw;
+  max-width: 925px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: white;
+  border-radius: var(--big-border-radius);
+  box-sizing: border-box;
+  padding: 60px;
+  gap: 32px;
+}
+
+.popup-properties__close-img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.popup-properties__label {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.popup-properties__info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 24px;
+}
+
+.info-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.info-card__title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--blue-color);
+}
+
+.info-card__descriprion {
+  font-size: 18px;
+  font-weight: 500;
+}
