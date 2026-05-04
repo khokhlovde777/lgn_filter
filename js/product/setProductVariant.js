@@ -4,19 +4,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Функция для удаления active со всех элементов
   function removeActiveFromAll(buttons) {
-  buttons.forEach(button => {
-    // Удаляем active с самой кнопки
-    button.classList.remove('active-variant');
-    
-    // Находим внутренние элементы и удаляем active
-    const upDiv = button.querySelector('.variants-card__up');
-    const article = button.querySelector('.variants-card__article');
-    const title = button.querySelector('.variants-card__title');
-    
-    if (upDiv) upDiv.classList.remove('active-variant');
-    if (article) article.classList.remove('active-variant');
-    if (title) title.classList.remove('active-variant');
-  });
+    buttons.forEach(button => {
+      // Удаляем active с самой кнопки
+      button.classList.remove('active-variant');
+      
+      // Находим внутренние элементы и удаляем active
+      const upDiv = button.querySelector('.variants-card__up');
+      const article = button.querySelector('.variants-card__article');
+      const title = button.querySelector('.variants-card__title');
+      
+      if (upDiv) upDiv.classList.remove('active-variant');
+      if (article) article.classList.remove('active-variant');
+      if (title) title.classList.remove('active-variant');
+    });
   }
 
   // Функция для добавления active на нужные элементы внутри одной кнопки
