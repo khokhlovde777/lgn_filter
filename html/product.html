@@ -256,113 +256,581 @@
           <!-- Применяемость -->
           <div class="product-info__card">
             <p class="card-label">Применяемость</p>
-            <div class="card-content">
+            <div class="card-content applicability-wrapper-anim">
 
-              <button type="button" class="btn card-content__row--car-brand">
-                <p class="card-content__title--car-brand">ACURA</p>
-                <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button type="button" class="btn-applicability card-content__row--car-brand">
+                <p class="card-content__title--car-text">ACURA</p>
+                <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
 
-              <div class="card-content card-content--car-models">
+              <div class="card-content card-content--car-models applicability-wrapper-anim">
 
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <p class="card-content__title--car-brand">Legend</p>
+                  <p class="card-content__title--car-text">Legend</p>
                 </button>
                 <div class="car-info-table">
                   <table class="table">
-                    <thead class="table__header">
+                    <thead>
                       <tr>
-                        <th>Объем (модель)</th>
+                        <th class="first-data">Объем (модель)</th>
                         <th>Код двигателя</th>
                         <th>Мощност кВт (л.с.)</th>
-                        <th>Год выпуска</th>
+                        <th class="last-data">Год выпуска</th>
                       </tr>
                     </thead>
-                    <tr>
-                      <td>3.5</td>
-                      <td>J35Z2J35Z2J35Z2</td>
-                      <td>204(277)</td>
-                      <td class="table__release-date">
-                        <td>04/12</td>
-                        <td>⇒</td>
-                        <td>04/26</td>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>3.5</td>
-                      <td>J35Z2J35Z2J35Z2</td>
-                      <td>204(277)</td>
-                      <td class="table__release-date">
-                        <td>04/12</td>
-                        <td>⇒</td>
-                        <td>04/26</td>
-                      </td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
                   </table>
                 </div>
-                
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <p class="card-content__title--car-brand">MDX I</p>
+                  <p class="card-content__title--car-text">Legend</p>
                 </button>
-                
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <p class="card-content__title--car-brand">MDX II</p>
+                  <p class="card-content__title--car-text">Legend</p>
                 </button>
-                
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                  <p class="card-content__title--car-brand">RDX I</p>
+                  <p class="card-content__title--car-text">Legend</p>
                 </button>
-                
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p class="card-content__title--car-brand">RDX II</p>
-                </button>
-                
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p class="card-content__title--car-brand">RSX</p>
-                </button>
-                
-                <button type="button" class="btn card-content__row--car-model">
-                  <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                  <p class="card-content__title--car-brand">TL III</p>
-                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
 
               </div>
 
-              <button type="button" class="btn card-content__row--car-brand">
-                <p class="card-content__title--car-brand">TOYOTA</p>
-                <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button type="button" class="btn-applicability card-content__row--car-brand">
+                <p class="card-content__title--car-text">ACURA</p>
+                <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
 
-              <button type="button" class="btn card-content__row--car-brand">
-                <p class="card-content__title--car-brand">LEXUS</p>
-                <svg class="card-content__arrow--car-brand" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div class="card-content card-content--car-models applicability-wrapper-anim">
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn-applicability card-content__row--car-brand">
+                <p class="card-content__title--car-text">ACURA</p>
+                <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
+
+              <div class="card-content card-content--car-models applicability-wrapper-anim">
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+              <button type="button" class="btn-applicability card-content__row--car-brand">
+                <p class="card-content__title--car-text">ACURA</p>
+                <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <div class="card-content card-content--car-models applicability-wrapper-anim">
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <button type="button" class="btn-applicability card-content__row--car-model">
+                  <svg class="card-content__arrow--car-svg" width="4" height="8" viewBox="0 0 4 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.499999 0.500001L3.5 4L0.5 7.5" stroke="#0A0A0A" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p class="card-content__title--car-text">Legend</p>
+                </button>
+                <div class="car-info-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th class="first-data">Объем (модель)</th>
+                        <th>Код двигателя</th>
+                        <th>Мощност кВт (л.с.)</th>
+                        <th class="last-data">Год выпуска</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                      <tr>
+                        <td class="first-data">3.5</td>
+                        <td>J35Z2J35Z2J35Z2</td>
+                        <td>204(277)</td>
+                        <td class="last-data">04/12⇒ 04/26</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+              </div>
+
+
               
             </div>
           </div>
@@ -404,8 +872,30 @@
                 <p class="card-content__title">Honda</p>
                 <p class="card-content__description">04154PR3E00</p>
               </div>
+
+               <hr class="card-content__devider">
+
+              <div class="card-content__row">
+                <p class="card-content__title">Honda</p>
+                <p class="card-content__description">04154PR3E00</p>
+              </div>
+
+               <hr class="card-content__devider">
+
+              <div class="card-content__row">
+                <p class="card-content__title">Honda</p>
+                <p class="card-content__description">04154PR3E00</p>
+              </div>
+
+               <hr class="card-content__devider">
+
+              <div class="card-content__row">
+                <p class="card-content__title">Honda</p>
+                <p class="card-content__description">04154PR3E00</p>
+              </div>
               
             </div>
+            <button type="buttom" class="btn-applicability show-more">Показать еще</button>
           </div>
 
           
@@ -624,6 +1114,8 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/js/scrollProductGallery.js"></script>
   <script src="/js/product/setProductVariant.js"></script>
+  <script src="/js/product/selectApplicability.js"></script>
+  <script src="/js/product/showMoreOEM.js"></script>
 
 </body>
 </html>

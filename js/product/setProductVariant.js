@@ -44,4 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
       addActiveToButton(this);
     });
   });
+  if (variantButtons.length > 0) {
+    addActiveToButton(variantButtons[0]);
+  }
 })
