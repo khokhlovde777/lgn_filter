@@ -55,6 +55,7 @@
   font-size: 48px;
   font-weight: 500;
   color: white;
+  max-width: 1240px;
 }
 
 .first-section__description {
