@@ -1,178 +1,27 @@
-.background-png--partnerships {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-41%);
-  right: 110px;
-  width: 49.6%;
-}
-
-.gray-section {
-  background-color: var(--background-gray-color);
-  width: 100vw;
-  height: 100%;
-  overflow: visible;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  z-index: 2;
-}
-
-.tabs-wrapper {
-  position: sticky;
-  top: 105px;
-  width: 100vw;
-  height: 100%;
+.results-section {
+  margin-top: 105px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 0 20px 0;
-  background-color: var(--background-gray-color);
-  z-index: 2;
+  width: 100vw;
+  background-color: #E7E9EE;
 }
 
-.tabs {
-  width: 88vw;
-  max-width: var(--max-width);
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.tabs__button {
-  padding: 16px 30px;
-  border-radius: 43px;
-  background-color: white; 
-  box-sizing: border-box;
-}
-
-.active-tab {
-  background-color: var(--blue-color);
-  color: white;
-}
-
-.taxi-and-carsh-partnersip {
+.result-section__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin-top: 20px;
   width: 88vw;
   max-width: var(--max-width);
 }
 
-.info-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-}
-
-.info-section__left {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 34px;
-  max-width: 578px;
-}
-
-.info-section__header {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 13px;
-}
-
-.info-section__title {
-  font-size: 40px;
-  font-weight: 500;
-}
-
-.info-section__description {
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--gray-text);
-  opacity: .8;
-}
-
-.info-section__methods {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 10px;
-}
-
-.method-card {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 6px;
-}
-
-.method-card__header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 13px;
-}
-
-.method-card__title {
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.info-section__right {
-  width: 42.36vw;
-  max-width: 610px;
-  min-width: 374px;
-  border-radius: var(--big-border-radius);
-}
-
-.info-section__image {
+.result-section__label {
   width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: inherit;
-}
-
-.taxi-and-carsh-partnersip-popular-models {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 30px;
-}
-
-.popular-models__title {
-  font-size: 24px;
+  text-align: start;
+  font-size: 48px;
   font-weight: 600;
-}
-
-.popular-models__tabs {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.popular-models__tab {
-  background-color: white;
-  padding: 17px 15px;
-  border-radius: 10px;
-}
-
-.active-tab--popular-model {
-  background-color: var(--blue-color);
-  color: white;
+  margin-top: 60px
 }
 
 .popular-model__info-section {
@@ -182,6 +31,8 @@
   justify-content: center;
   gap: 20px;
   width: 100%;
+  margin-bottom: 40px;
+  margin-top: 27px;
 }
 
 .model-info__option {
@@ -190,9 +41,9 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  background-color: white;
+  background-color: #F7F8FB;
   border-radius: 20px;
-  transition: all .3 ease;
+  transition: all .3s ease;
 }
 
 .btn--model-info {
@@ -218,9 +69,9 @@
   border-radius: 20px;
 }
 
-.btn--model-info:hover {
+/* /* .btn--model-info:hover {
   transform: scale(1.01);
-}
+} */
 
 .btn--model-info:active {
   transform: scale(0.99);
@@ -326,7 +177,6 @@
   transition: all .3 ease;
 }
 
-
 /*  */
 
 .model-info__body.active-model-info__body {
@@ -334,11 +184,11 @@
 }
 
 .model-info__head.active-model-info__head {
-  background-color:var(--blue-color);
+  background-color: white;
 }
 
 .head-item__title.head-item__text-active, .head-item__value.head-item__text-active {
-  color: white;
+
 }
 
 .head-item__arrow.head-item__arrow-active {
@@ -346,87 +196,7 @@
 }
 
 .head-item__arrow.head-item__arrow-active path {
-  stroke: white;
-}
-
-.partnersip-cta {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  width: 100%;
-  padding: 22px 0 22px 45px;
-  gap: 107px;
-  background-color: var(--blue-color);
-  box-sizing: border-box;
-  border-radius: var(--big-border-radius);
-  margin-bottom: 80px;
-}
-
-.cta__left {
-  width: 38%;
-  max-width: 472px;
-}
-
-.cta__img {
-  width: 100%;
-}
-
-.cta__right {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 28px;
-}
-
-.cta__texts {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  gap: 10px;
-  color: white;
-}
-
-.cta__label {
-  font-size: 36px;
-  font-weight: 500;
-}
-
-.cta__description {
-  font-size: 16px;
-  font-weight: 400;
-  opacity: .9;
-}
-
-.cta_button {
-  padding: 20px 48px;
-  background-color: var(--orange-color);
-  color: white;
-  border-radius: var(--btn-border-radius);
-}
-
-.white-section {
-  width: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  gap: 60px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.section__content {
-  width: 88vw;
-  max-width: var(--max-width);
-  margin-top: 80px;
-  gap: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* stroke: white; */
 }
 
 .contacts-wrapper {
@@ -526,8 +296,4 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-#section-1, #section-2, #section-3, #section-4, #section-5, #section-6 {
-  scroll-margin-top: 347px;
 }
