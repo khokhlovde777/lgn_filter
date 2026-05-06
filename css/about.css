@@ -61,11 +61,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  flex-shrink: 3;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 267px));
   box-sizing: border-box;
-  row-gap: 16px;
+  gap: 16px;
 }
 
 .about-item {
@@ -174,8 +171,6 @@
 }
 
 .certificates-section {
-  width: 88vw;
-  max-width: var(--max-width);
   padding-top: 80px;
   display: flex;
   flex-direction: column;
@@ -269,3 +264,4 @@
   padding: 20px 47px;
   border-radius: var(--btn-border-radius);
 }
+

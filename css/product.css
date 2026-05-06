@@ -23,12 +23,14 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  width: 36.53%;
+  max-width: 453px;
 }
 
 .img-gallery-slider {
   width: 100%;
-  max-width: 453px;
-  height: 453px;
+  /* max-width: 453px; */
+  /* height: 453px; */
   position: relative;
   overflow: hidden;
   border-radius: var(--big-border-radius);
@@ -38,8 +40,8 @@
   display: flex;
   align-items: center;
   justify-content: start;
-  height: 100%;
   overflow: hidden;
+  aspect-ratio: 1/1;
 }
 
 .img-gallery__item {
@@ -47,6 +49,7 @@
 }
 
 .item__img {
+  width: 100%;
   max-width: 453px;
 }
 
@@ -104,8 +107,9 @@
 }
 
 .gallery-sliders__imgs .swiper-slide {
-  width: auto !important;
+  width: 30% !important;
   height: auto !important;
+  aspect-ratio: 1/1;
   flex-shrink: 0;
 }
 
@@ -184,7 +188,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(0, 168px));
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   width: 100%;
   gap: 30px;
 }
@@ -257,6 +261,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .btn--bye-bulk {
@@ -468,6 +473,7 @@ thead th{
   text-align: start;
   position: relative;
   z-index: 1;
+  padding-right: 10px;
 }
 
 thead tr {
@@ -478,6 +484,7 @@ thead tr {
 .car-info-table .table {
   border-collapse: collapse;
   width: 100%;
+  table-layout: fixed;
 }
 
 .first-data {
@@ -502,6 +509,8 @@ tbody td {
   font-size: 16px;
   font-weight: 400;
   color: var(--gray-text);
+  word-break: break-word;
+  padding-right: 10px;
 }
 
 
@@ -612,3 +621,9 @@ tbody td {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* @media (max-width: 1408px) {
+  .item-section {
+    flex-direction: column;
+  }
+} */

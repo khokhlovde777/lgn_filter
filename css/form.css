@@ -10,7 +10,7 @@
   background-color: var(--blue-color);
   border-radius: var(--big-border-radius);
   box-sizing: border-box;
-  padding: 55px 0 72px 64px;
+  padding: 55px 40px 72px 64px;
 }
 
 .form-wrapper__title {

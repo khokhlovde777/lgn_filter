@@ -89,6 +89,7 @@
 .category-item .category-down {
   overflow: visible !important;
   display: inline-block;
+  z-index: 1;
 }
 
 .category-item .category-down svg {

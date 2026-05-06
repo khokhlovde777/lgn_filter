@@ -366,3 +366,9 @@ tbody tr:last-child {
   border-bottom: none;
   height: 40px;
 }
+
+@media (max-width: 1084px) {
+  .head-texts {
+    gap: 31px;
+  }
+}

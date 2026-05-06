@@ -19,6 +19,7 @@
   align-items: start;
   justify-content: center;
   gap: 23px;
+  z-index: 2;
 }
 
 .first-section__title-wrapper {
@@ -185,4 +186,21 @@
   height: 100%;
   display: block;
   border-radius: inherit;
+}
+
+@media (max-width: 1220px) {
+  .info-section {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .info-section__left {
+    max-width: 88vw;
+  }
+
+  .info-section__right {
+    width: 88vw;
+    max-width: none;
+  }
 }

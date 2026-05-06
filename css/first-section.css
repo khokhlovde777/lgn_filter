@@ -19,6 +19,7 @@
   align-items: start;
   justify-content: center;
   gap: 23px;
+  z-index: 2;
 }
 
 .first-section__title-wrapper {
