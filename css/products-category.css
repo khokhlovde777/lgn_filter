@@ -99,7 +99,7 @@
 }
 
 .specification {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
@@ -167,7 +167,7 @@
 }
 
 .popular-position {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
@@ -281,7 +281,7 @@
   color: white;
   padding: 32px 32px 32px 64px;
   box-sizing: border-box;
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   border-radius: var(--big-border-radius);
   background-color: var(--blue-color);

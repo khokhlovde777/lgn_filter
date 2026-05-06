@@ -11,7 +11,7 @@
 }
 
 .first-section__content {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   height: 100%;
   display: flex;
@@ -68,7 +68,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   min-width: 227px;
   height: 100%;
@@ -102,7 +102,7 @@
 }
 
 .info-section {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   margin-top: 68px;
   display: flex;

@@ -11,7 +11,7 @@
 }
 
 .first-section__content {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   height: 100%;
   display: flex;
@@ -63,6 +63,7 @@
   font-size: 16px;
   font-weight: 400;
   color: #FFFFFF80;
+  max-width: 50%;
 }
 
 .background-img-png-wrapper {
@@ -70,7 +71,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   min-width: 227px;
   height: 100%;
@@ -79,7 +80,7 @@
 
 .background-png {
   position: absolute;
-  bottom: 0;
+  bottom: 20px;
   right: 110px;
   width: 49.6%;
 }
@@ -89,4 +90,11 @@
   top: 0;
   right: 0;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .background-png {
+    bottom: 59px;
+    right: 0;
+  }
 }

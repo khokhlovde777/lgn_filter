@@ -33,7 +33,7 @@
 }
 
 .tabs {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   align-items: center;
@@ -61,7 +61,7 @@
   justify-content: center;
   gap: 40px;
   margin-top: 20px;
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
 }
 
@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
 }
 
@@ -146,7 +146,7 @@
 }
 
 .taxi-and-carsh-partnersip-popular-models {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
@@ -355,7 +355,7 @@
 }
 
 .partnersip-cta {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   align-items: center;
@@ -423,7 +423,7 @@
 }
 
 .section__content {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   gap: 60px;
   display: flex;
@@ -439,7 +439,7 @@
   color: white;
   padding: 32px 32px 32px 64px;
   box-sizing: border-box;
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   border-radius: var(--big-border-radius);
   background-color: var(--blue-color);
@@ -549,11 +549,11 @@
 
   .info-section__left {
     width: 100%;
-    max-width: 88vw;
+    width: var(--width-container);
   }
 
   .info-section__right {
-    width: 88vw;
+    width: var(--width-container);
     max-width: none;
   }
 }

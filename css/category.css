@@ -1,5 +1,5 @@
 .content-category-wrapper {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   margin-top: 20px;
 }

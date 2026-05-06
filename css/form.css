@@ -1,5 +1,5 @@
 .form-wrapper {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;

@@ -88,6 +88,15 @@ html {
   overflow-x: hidden;
 }
 
+
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
 :root {
   --orange-color: #FF914D;
   --blue-color: #004AAD;
@@ -99,6 +108,13 @@ html {
   --transform-scale-hover: scale(1.03);
   --gray-color: #5E6775;
   --gray-text: #364153;
+  --width-container: 88vw;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --width-container: 93.3%;
+  }
 }
 
 .btn {
@@ -113,9 +129,12 @@ html {
   font-weight: 500;
 }
 
-.btn:hover {
-  transform: var(--transform-scale-hover);
+@media (min-width: 769px) {
+  .btn:hover {
+    transform: var(--transform-scale-hover);
+  }
 }
+
 
 .btn:active {
   transform: var(--transform-scale-active);

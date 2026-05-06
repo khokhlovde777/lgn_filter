@@ -11,7 +11,7 @@
 }
 
 .contacts-methods-wrapper {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   align-items: center;
@@ -86,7 +86,7 @@
 }
 
 .map-wrapper {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   border-radius: var(--big-border-radius);
   overflow: hidden;

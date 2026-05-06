@@ -17,7 +17,7 @@
 }
 
 .header-content-wrapper {
-  width: 88vw;
+  width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
   flex-direction: column;
@@ -71,6 +71,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.header-burger {
+  display: none;
 }
 
 .header-logo-wrapper {
@@ -130,4 +134,143 @@
   text-align: start;
   font-size: 16px;
   font-weight: 400;
+}
+
+.header-button__form {
+  display: none;
+}
+
+/*  */
+.menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: white;
+  transition: all .3s ease;
+  padding: 27px 0;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.menu__content {
+  width: var(--width-container);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.menu__items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu__item--products {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+.menu__item {
+  font-size: 25px;
+  font-weight: 400;
+  text-align: start;
+}
+
+.menu__item-arrow {
+  transition: all .3s ease;
+}
+
+.menu__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 12px;
+}
+
+.menu__btn {
+  padding: 10px 23px;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+  border-radius: 40px;
+}
+
+.menu__second-level {
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu__item--products.open .menu__item-arrow {
+  transform: rotate(90deg);
+}
+
+.menu__close {
+  width: 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/*  */
+
+@media (max-width: 869px) {
+
+  .header {
+    border-radius: 0;
+    padding-top: 27px;
+  }
+
+  .header-content-wrapper {
+    justify-content: space-between;
+  }
+
+  .header-first-line {
+    display: none;
+  }
+
+  .header-logo-wrapper {
+    gap: 30px;
+  }
+
+  .header-burger {
+    display: block;
+  }
+
+  .hedaer-burger__img {
+    width: 20px;
+  }
+
+  .header-links-pages-wrapper {
+    display: none;
+  }
+
+  .header-button__form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 23px;
+    background-color: var(--orange-color);
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+  
 }
