@@ -5,8 +5,8 @@
   align-items: center;
   justify-content: center;
   background-color: var(--background-gray-color);
-  padding-top: 40px;
-  padding-bottom: 80px;
+  padding-top: var(--half-padding-blocks);
+  padding-bottom: var(--padding-blocks);
   box-sizing: border-box;
 }
 

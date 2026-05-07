@@ -36,7 +36,6 @@
 }
 
 .form-wrapper__description {
-  max-width: 507px;
   font-size: 16px;
   font-weight: 400;
   opacity: .8;
@@ -48,7 +47,6 @@
   align-items: start;
   justify-content: center;
   gap: 11px;
-  max-width: 507px;
 }
 
 .request-form__field {
@@ -145,5 +143,29 @@ input.request-form__input::placeholder {
 }
 
 @media (max-width: 768px) {
-  
+
+  .form-wrapper {
+    padding: 26px 40px;
+  }
+
+  .form-wrapper__img {
+    display: none;
+  } 
+
+  .form-wrapper__left {
+    max-width: none;
+    width: 100%;
+  }
+
+  .form-wrapper__title {
+    font-size: 30px;
+  }
+
+  .form-wrapper__form {
+    width: 100%;
+  }
+
+  .request-form__submit {
+    width: 100%;
+  }
 }
