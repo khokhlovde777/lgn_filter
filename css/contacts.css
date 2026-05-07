@@ -93,3 +93,10 @@
   margin-top: 67px;
   margin-bottom: 40px;
 }
+
+@media (max-width: 1026px) {
+  .info-section-contacts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
