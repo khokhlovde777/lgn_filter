@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: start;
   z-index: 2;
-  padding: 80px 0;
+  padding: var(--padding-blocks) 0;
 }
 
 .tabs-wrapper {
@@ -418,8 +418,8 @@
   align-items: center;
   justify-content: start;
   gap: 60px;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin-top: var(--padding-blocks);
+  margin-bottom: var(--padding-blocks);
 }
 
 .section__content {
@@ -451,12 +451,89 @@
   }
 
   .info-section__left {
-    width: 100%;
     width: var(--width-container);
+    max-width: none;
   }
 
   .info-section__right {
     width: var(--width-container);
     max-width: none;
+  }
+}
+
+@media (max-width: 869px) {
+  .tabs-wrapper {
+    position: sticky;
+    top: 94px;
+    overflow-x: scroll;
+  }
+  
+  .tabs {
+    flex-wrap: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .tabs > :first-child {
+    margin-left: calc((100vw - var(--width-container))/2);
+  }
+  
+  .tabs > :last-child {
+    margin-right: calc((100vw - var(--width-container))/2);
+  }
+
+  .tabs-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+} 
+
+@media (max-width: 768px) {
+  .info-section {
+    width: 100vw;
+  }
+
+  .taxi-and-carsh-partnersip-popular-models {
+    width: 100%;
+  }
+
+  .partnersip-cta {
+    width: 100%;
+  }
+
+  .cta__right {
+    gap: 16px;
+  }
+
+  .cta__label {
+    width: 90%;
+  }
+
+}
+
+@media (max-width: 668px) {
+
+  .partnersip-cta {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 26px 40px;
+    gap: 30px;
+    position: relative;
+  }
+
+  .cta_button {
+    width: 100%;
+  }
+
+  .cta__left {
+    min-width: 274px;
+  }
+
+}
+
+@media (max-width: 1021px) {
+  .head-texts {
+    flex-wrap: wrap;
   }
 }

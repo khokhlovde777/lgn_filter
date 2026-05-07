@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   const partnershipVariantsButton = document.querySelectorAll('.tabs__button');
+  const tabsWrapper = document.querySelector('.tabs-wrapper');
   
   const sections = [
     '#section-1', '#section-2', '#section-3', 
@@ -21,6 +22,31 @@ document.addEventListener('DOMContentLoaded', function() {
         !partnershipVariantsButton[index].classList.contains('active-tab')) {
       removeActiveFromAll(partnershipVariantsButton);
       addActiveToTab(partnershipVariantsButton[index]);
+      
+      scrollActiveTabIntoView();
+    }
+  }
+  
+  function scrollActiveTabIntoView() {
+    if (window.innerWidth <= 869 && tabsWrapper) {
+      const activeTab = document.querySelector('.tabs__button.active-tab');
+      if (activeTab && tabsWrapper) {
+        const wrapperRect = tabsWrapper.getBoundingClientRect();
+        const tabRect = activeTab.getBoundingClientRect();
+        
+        const isTabFullyVisible = tabRect.left >= wrapperRect.left && tabRect.right <= wrapperRect.right;
+        
+        if (!isTabFullyVisible) {
+          const scrollOffset = activeTab.offsetLeft - tabsWrapper.offsetLeft;
+          const wrapperCenter = tabsWrapper.clientWidth / 2;
+          const tabCenter = activeTab.offsetWidth / 2;
+          
+          tabsWrapper.scrollTo({
+            left: scrollOffset - wrapperCenter + tabCenter,
+            behavior: 'smooth'
+          });
+        }
+      }
     }
   }
 
@@ -28,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     button.addEventListener('click', function() {
       removeActiveFromAll(partnershipVariantsButton);
       addActiveToTab(this);
+      
+      scrollActiveTabIntoView();
       
       const targetAnchor = sections[index];
       if (targetAnchor) {
@@ -73,8 +101,13 @@ document.addEventListener('DOMContentLoaded', function() {
     scrollTimeout = requestAnimationFrame(updateActiveButtonOnScroll);
   });
   
+  window.addEventListener('resize', function() {
+    scrollActiveTabIntoView();
+  });
+  
   if (partnershipVariantsButton.length > 0) {
     addActiveToTab(partnershipVariantsButton[0]);
+    setTimeout(scrollActiveTabIntoView, 100);
   }
   
   updateActiveButtonOnScroll();
