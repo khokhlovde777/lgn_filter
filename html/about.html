@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="/css/search.css">
     <link rel="stylesheet" href="/css/form.css">
     <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/contacts-info.css">
     <link rel="stylesheet" href="/css/first-section.css">
+    <link rel="stylesheet" href="/css/popup-properties-company.css">
     <title>О компании</title>
 </head>
 <body>
@@ -202,7 +204,7 @@
           <div class="third-section-up">
             <div class="about-text-wrapper">
               <p class="company-label">
-                О компании
+                Наша история
               </p>
               <p class="company-description">
                 ООО «РУСФИЛЬТР» — российский производитель автомобильных фильтров под торговой маркой LGN FILTER. 
@@ -345,62 +347,39 @@
           </div>
         </div>
 
-        <div class="form-wrapper" style="margin-top: 27px; margin-bottom: 40px;">
-
-          <p class="form-wrapper__title">Запрос полного каталога в Excel</p>
-
-          <div class="form-wrapper__content">
-            
-            <div class="form-wrapper__left">
+        <div class="contacts-wrapper">
+          <div class="text-and-button-wrapper">
+            <div class="texts-wrapper">
+              <p class="contact-label">Контактная информация</p>
+              <div class="description-wrapper">
+                <p class="tel-number">+7 (495) 123-45-67</p>
+                <div class="mail-wrapper">
+                  <div class="contact-img-wrapper">
+                    <img src="/src/main/mail.svg" class="mail-img">
+                  </div>
+                  <p class="mail-text">info@lgnfilter.ru</p>
+                </div>
+                <div class="location-wrapper">
+                  <div class="contact-img-wrapper">
+                    <img src="/src/main/location.svg" class="location-img">
+                  </div>
+                  <p class="location-text">г. Москва, ул. Производственная, д. 1</p>
+                </div>
+              </div>
               
-              <p class="form-wrapper__description">
-                После заполнения формы менеджер предоставит общий каталог нашей продукции
-              </p>
-    
-              <form action="" method="get" autocomplete="off" class="form-wrapper__form">
-                
-                <div class="request-form__field">
-                  <input type="text" class="request-form__input" placeholder="Имя *" autocomplete="off">
-                </div>
-                
-                <div class="request-form__field">
-                  <input type="email" class="request-form__input" placeholder="Email *" autocomplete="off">
-                </div>
-                
-                <div class="request-form__field">
-                  <input type="tel" class="request-form__input" placeholder="Телефон *" autocomplete="off">
-                </div>
-                
-                <div class="request-form__field">
-                  <input type="text" class="request-form__input" placeholder="Название организации *" autocomplete="off">
-                </div>
-                
-                <div class="request-form__checkbox-group">
-                  <input type="checkbox" id="privacy" class="request-form__checkbox">
-                  <label for="privacy" class="request-form__checkbox-label">
-                    <span class="request-form__checkbox-text">
-                      Я согласен с условиями Политики конфиденциальности
-                    </span>
-                  </label>
-                </div>
-                
-                <button type="submit" class="btn request-form__submit">
-                  Отправить
-                </button>
-                
-              </form>
+              <button type="button" class="btn btn-requisits">
+                Реквизиты
+              </button>
             </div>
-  
-            <img src="/src/form/form__img.png" class="form-wrapper__img">
-    
           </div>
 
-          
+          <div class="map-wrapper">
+            <img src="/src/main/map-img.png" class="map-img">
+            <img src="/src/main/logo-absolute.svg" class="logo-absolute-img">
+          </div>
         </div>
 
       </div>
-
-
 
     </main>
 
@@ -514,8 +493,51 @@
         </div>
       </div>
     </div>
-    <script src="/js/openHeaderMenuMob.js"></script>
 
+    <div class="popup-properties-company">
+      <div class="popup-properties__wrapper">
+        <button type="button" class="btn popup-properties__close-img">
+          <svg width="36" height="42" viewBox="0 0 36 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 31.08L16.64 20.36L8.48 10H11.24L18.24 18.84L25.12 10H27.84L19.68 20.32L28.36 31.08H25.6L18.12 22.04L10.68 31.08H8Z" fill="black"/>
+          </svg>
+        </button>
+        <p class="popup-properties__label">Реквизиты</p>
+        <div class="popup-properties__info-section">
+
+          <div class="info-card">
+            <p class="info-card__title">Наименование юр. лица</p>
+            <p class="info-card__description">ООО «РУСФИЛЬТР»</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Юридический адрес</p>
+            <p class="info-card__description">115280, г. Москва, ул. Ленинская Слобода, д.19, пом.62/1</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Почтовый адрес</p>
+            <p class="info-card__description">115280, г. Москва, ул. Ленинская Слобода, д.19, пом.62/1</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">ИНН</p>
+            <p class="info-card__description">7723919550</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Банковские реквизиты</p>
+            <p class="info-card__description">р/с № 40702810238000006912</p>
+            <p class="info-card__description">ПАО «Сбербанк России»</p>
+            <p class="info-card__description">БИК 044525225</p>
+            <p class="info-card__description">к/с № 30101810400000000225</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Генеральный директор</p>
+            <p class="info-card__description">Югов Андрей Владимирович</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/openHeaderMenuMob.js"></script>
+    <script src="/js/openPopupProperties.js"></script>
     <script src="/js/main/search/inputLogic.js"></script>
     <script src="/js/openHeaderMenu.js"></script>
 </body>

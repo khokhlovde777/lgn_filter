@@ -98,4 +98,6 @@
   font-size: 13px;
   font-weight: 400;
   color: var(--gray-color);
+  flex-wrap: wrap;
+  gap: 20px;
 }

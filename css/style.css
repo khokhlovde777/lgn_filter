@@ -109,11 +109,15 @@ html::-webkit-scrollbar {
   --gray-color: #5E6775;
   --gray-text: #364153;
   --width-container: 88vw;
+  --padding-blocks: 80px;
+  --half-padding-blocks: 40px;
 }
 
 @media (max-width: 768px) {
   :root {
     --width-container: 93.3%;
+    --padding-blocks: 24px;
+    --half-padding-blocks: 12px;
   }
 }
 

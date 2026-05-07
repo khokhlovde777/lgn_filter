@@ -143,3 +143,7 @@ input.request-form__input::placeholder {
   max-width: 667px;
   min-width: 357px;
 }
+
+@media (max-width: 768px) {
+  
+}
