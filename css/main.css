@@ -17,7 +17,7 @@
   align-items: center;
   justify-content: start;
   background-color: var(--background-gray-color);
-  padding-bottom: 80px;
+  padding-bottom: var(--padding-blocks);
 }
 
 .second-section {
@@ -35,7 +35,7 @@
 
 .four-section, .five-section, .six-section {
   gap: 40px;
-  padding: 80px 0;
+  padding: var(--padding-blocks) 0;
   height: 100%;
   max-height: none;
 }
@@ -227,11 +227,12 @@
     transform: scale(1);
   }
 }
+
 .content-wrapper {
   width: var(--width-container);
   max-width: var(--max-width);
   height: 100%;
-  padding: 80px 0;
+  padding: var(--padding-blocks) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -272,7 +273,7 @@
   width: 100%;
   max-width: var(--max-width);
   background-color: var(--blue-color);
-  padding: 37px 47px;
+  padding: 32px 40px;
   border-radius: var(--big-border-radius);
   align-items: center;
   display: flex;
@@ -541,4 +542,119 @@
   .company-video {
     width: 100%;
   }
+}
+
+@media (max-width: 768px) {
+
+  .text-wrapper {
+    gap: 20px;
+  }
+
+  .label {
+    font-size: 45px;
+  }
+
+  .buttons-wrapper {
+    margin-top: 30px;
+  }  
+
+  .content-wrapper {
+    gap: 20px;
+  }
+
+  .third-section-down {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .about-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .about-item svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .cta-wrapper {
+    gap: 30px;
+  }
+
+  .text-button-wrapper {
+    gap: 16px;
+  }
+
+  .cta-partner-label {
+    width: 90%;
+  }
+
+  .video-wrapper {
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: scroll;
+    width: 100%;
+  }
+
+  .video-wrapper > :first-child {
+    padding-left: calc((100vw - var(--width-container))/2);
+  }
+
+  .video-wrapper > :last-child {
+    padding-right: calc((100vw - var(--width-container))/2);
+  }
+
+  .video-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .certificates-section {
+    width: var(--width-container);
+  }
+
+  .certificates-wrapper {
+    width: var(--width-container);
+    max-width: var(--max-width);
+    flex-wrap: nowrap;
+    justify-content: start;
+    overflow-x: scroll;
+  }
+
+  .certificates-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .certificates-item {
+    height: auto;
+  }
+
+  .six-section {
+    gap: 30px;
+  }
+
+}
+
+@media (max-width: 668px) {
+
+  .cta-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
+    padding: 26px 40px 0 40px;
+    gap: 30px;
+    position: relative;
+  }
+
+  .text-button-wrapper {
+    width: 100%;
+    gap: 16px;
+  }
+
+  .cta-partner-btn {
+    width: 100%;
+  }
+
 }

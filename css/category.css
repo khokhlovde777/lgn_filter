@@ -130,3 +130,9 @@
 .category-item:hover .category-down svg circle {
   stroke: white !important;
 }
+
+@media (max-width: 865px) {
+  .content {
+    width: calc(100% / 2 - 10px);
+  }
+}
