@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', function() {
       titles.forEach(title => title.classList.remove('head-item__text-active'));
       values.forEach(value => value.classList.remove('head-item__text-active'));
       if (arrow) arrow.classList.remove('head-item__arrow-active');
+      
+      // Удаляем класс active__option с самого .model-info__option
+      // option.classList.remove('active__option');
     });
   }
 
@@ -42,6 +45,9 @@ document.addEventListener('DOMContentLoaded', function() {
     titles.forEach(title => title.classList.add('head-item__text-active'));
     values.forEach(value => value.classList.add('head-item__text-active'));
     if (arrow) arrow.classList.add('head-item__arrow-active');
+    
+    // Добавляем класс active__option на сам .model-info__option
+    // option.classList.add('active__option');
   }
 
   // Добавляем обработчик клика на каждую кнопку model-info__head
