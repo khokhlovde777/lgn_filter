@@ -1,4 +1,10 @@
 function initPositionsGallery() {
+  // Проверяем ширину экрана
+  if (window.innerWidth <= 1020) {
+    console.log('Positions gallery disabled: screen width <= 1020px');
+    return;
+  }
+  
   if (typeof Swiper === 'undefined') {
     console.error('Swiper library is not loaded');
     return;
