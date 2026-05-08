@@ -1,4 +1,10 @@
 function initProductGallery() {
+  // Проверяем ширину экрана
+  if (window.innerWidth <= 1000) {
+    console.log('Gallery disabled: screen width <= 1000px');
+    return;
+  }
+  
   if (typeof Swiper === 'undefined') {
     console.error('Swiper library is not loaded');
     return;
@@ -59,4 +65,5 @@ function initProductGallery() {
   }
 }
 
+// Запускаем при загрузке DOM
 document.addEventListener('DOMContentLoaded', initProductGallery);
