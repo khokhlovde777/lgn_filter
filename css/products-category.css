@@ -8,7 +8,7 @@
   justify-content: start;
   z-index: 2;
   gap: 68px;
-  padding-bottom: 80px;
+  padding-bottom: var(--padding-blocks);
 }
 
 .info-section {
@@ -94,7 +94,7 @@
 .third-section {
   width: 100vw;
   background-color: var(--background-gray-color);
-  padding-bottom: 80px; 
+  padding-bottom: var(--padding-blocks); 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,6 +335,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .second-section {
+    gap: 30px;
+  }
+
   .specification__items {
     flex-direction: column;
     width: 100%;

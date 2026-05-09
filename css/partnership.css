@@ -545,6 +545,11 @@
     width: 90%;
   }
 
+  .background-png--partnerships {
+    bottom: 59px;
+    right: 0;
+  }
+
 }
 
 @media (max-width: 668px) {
@@ -638,6 +643,13 @@
 
   .head-item__wrapper {
     gap: 0;
+  }
+
+  .background-png--partnerships {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 77.4%;
+    top: auto;
   }
 
 }
