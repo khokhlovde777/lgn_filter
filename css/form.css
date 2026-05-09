@@ -169,3 +169,18 @@ input.request-form__input::placeholder {
     width: 100%;
   }
 }
+
+@media (max-width: 610px) {
+
+  .form-wrapper {
+    padding: 21px 16px;
+  }
+
+  .form-wrapper__title {
+    font-size: 20px;
+  }
+
+  .form-wrapper__description, input.request-form__input, .request-form__checkbox-text {
+    font-size: 14px;   
+  }
+}

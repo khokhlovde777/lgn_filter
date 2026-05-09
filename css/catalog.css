@@ -9,10 +9,11 @@
   justify-content: start;
   z-index: 2;
 }
+
 .info-section {
   width: var(--width-container);
   max-width: var(--max-width);
-  margin-top: 68px;
+  margin-top: var(--half-padding-blocks);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +115,20 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 610px) {
+  .info-section__title {
+    font-size: 20px;
+  }
 
+  .info-section__description {
+    font-size: 14px;
+  }
+
+  .method-card__title, .method-card__description {
+    font-size: 14px;
+  }
+
+  .info-section__left {
+    gap: 15px;
+  }
 }
