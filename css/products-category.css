@@ -357,3 +357,44 @@
   }
 
 }
+
+@media (max-width: 610px) {
+
+  .info-section__title, .specification__title, .item__label, .popular-position__title {
+    font-size: 20px;
+  }
+
+  .info-section__description, .method-card__title, .item__description {
+    font-size: 14px;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .specification__item {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .item__img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .item__label, .item__description {
+    width: 100%;
+    text-align: center;
+  }
+
+  .slide-item__label, .slide-item__status {
+    font-size: 14px;
+  }
+
+  .slide-item__texts {
+    gap: 5px;
+  }
+
+  .slide-item__article {
+    font-size: 12px;
+  }
+}
