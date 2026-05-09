@@ -190,16 +190,8 @@
   background-color: white;
 }
 
-.head-item__title.head-item__text-active, .head-item__value.head-item__text-active {
-
-}
-
 .head-item__arrow.head-item__arrow-active {
   transform: rotate(90deg);
-}
-
-.head-item__arrow.head-item__arrow-active path {
-  /* stroke: white; */
 }
 
 .result-section__table {
