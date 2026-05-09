@@ -274,3 +274,25 @@
   }
   
 }
+
+@media (max-width: 610px) {
+  .header {
+    padding: 15px 0;
+  } 
+
+  .hedaer-burger__img {
+    width: 14px;
+  }
+
+  .header-logo-img {
+    max-width: 127px;
+  }
+
+  .header-button__form {
+    padding: 10px 20px;
+  }
+
+  .menu__item, .menu__btn {
+    font-size: 18px;
+  }
+}

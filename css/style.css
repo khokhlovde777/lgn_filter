@@ -133,6 +133,12 @@ html::-webkit-scrollbar {
   font-weight: 500;
 }
 
+@media (max-width: 610px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 769px) {
   .btn:hover {
     transform: var(--transform-scale-hover);

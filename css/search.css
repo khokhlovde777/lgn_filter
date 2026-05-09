@@ -177,6 +177,39 @@ input.search-input {
 
 }
 
+@media (max-width: 610px) {
+
+  .search-wrapper {
+    padding: 21px 16px;
+    gap: 10px;
+  }
+
+  .search-label {
+    font-size: 14px;
+  }
+
+  .search-buttons-wrapper {
+    flex-direction: column;
+  }
+
+  .btn-search-number, .btn-search-auto {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .search-by-number {
+    height: 60px;
+  }
+
+  input.search-input {
+    font-size: 14px;
+  }
+
+  .btn-search-enter  {
+    height: 62px;
+  }
+}
+
 /* @media (max-width: 690px) {
 
   .search-buttons-wrapper {

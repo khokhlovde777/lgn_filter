@@ -279,7 +279,7 @@
   }
 
   .third-section__content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     max-width: none;
   }
 
@@ -370,6 +370,62 @@
 
   .cta-partner-btn {
     width: 100%;
+  }
+
+}
+
+@media (max-width: 610px) {
+  .company-label {
+    font-size: 20px;
+  }
+
+  .company-description {
+    font-size: 14px;
+  }
+
+  .about-item-text-label {
+    font-size: 16px;
+  }
+
+  .about-item-text-description {
+    font-size: 14px;
+  }
+
+  .third-section__label {
+    font-size: 20px;
+  }
+
+  .third-section__description {
+    font-size: 14px;
+  }
+
+  .result__sum {
+    font-size: 18px;
+  }
+
+  .result__description {
+    font-size: 14px;
+  }
+
+  .sertificates-label {
+    font-size: 20px;
+  }
+
+  .certificates-item {
+    width: 34%;
+    min-width: 105px;
+  }
+
+  .cta-partner-label {
+    font-size: 20px;
+  }
+
+  .cta-partner-description {
+    font-size: 14px;
+  }
+
+  .cta-wrapper {
+    padding: 21px 16px;
   }
 
 }
