@@ -136,3 +136,47 @@
     width: calc(100% / 2 - 10px);
   }
 }
+
+@media (max-width: 610px) {
+  .category-label {
+    font-size: 16px;
+  }
+
+  .category-description {
+    font-size: 12px;
+  }
+
+  .category-down svg {
+    width: 41px;
+    height: 41px;
+  }
+
+  .category-item {
+    height: 193px;
+    padding: 20px 16px;
+  }
+  
+  .categories-wrapper {
+    row-gap: 10px;
+  }
+
+  .content {
+    width: calc(100% / 2 - 5px);
+  }
+
+  .company-label {
+    font-size: 20px;
+  }
+
+  .company-description {
+    font-size: 14px;
+  }
+
+  .about-item-text-label {
+    font-size: 16px;
+  }
+
+  .about-item-text-description {
+    font-size: 14px;
+  }
+}

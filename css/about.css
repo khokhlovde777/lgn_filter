@@ -375,7 +375,7 @@
 }
 
 @media (max-width: 610px) {
-  .company-label {
+  .company-label, .third-section__label, .sertificates-label, .cta-partner-label, .video-review-label, .sertificates-label {
     font-size: 20px;
   }
 
@@ -391,10 +391,6 @@
     font-size: 14px;
   }
 
-  .third-section__label {
-    font-size: 20px;
-  }
-
   .third-section__description {
     font-size: 14px;
   }
@@ -407,17 +403,9 @@
     font-size: 14px;
   }
 
-  .sertificates-label {
-    font-size: 20px;
-  }
-
   .certificates-item {
     width: 34%;
     min-width: 105px;
-  }
-
-  .cta-partner-label {
-    font-size: 20px;
   }
 
   .cta-partner-description {
@@ -425,7 +413,13 @@
   }
 
   .cta-wrapper {
-    padding: 21px 16px;
+    padding: 21px 16px 0 21px;
   }
+
+  .cta-partner-img {
+    margin: 0;
+  }
+
+
 
 }

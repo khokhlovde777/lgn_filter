@@ -658,3 +658,154 @@
   }
 
 }
+
+
+@media (max-width: 610px) {
+
+  .first-section {
+    align-items: start;
+    box-sizing: border-box;
+    padding-top: 108px;
+    padding-bottom: 100px;
+  }
+
+  .content-area {
+    height: 100%;
+
+  }
+
+  .circles-wrapper {
+    display: none;
+  }
+  
+  .btn-catalog {
+    width: 100%;
+  }
+
+  .label {
+    font-size: 32px;
+    letter-spacing: -1px;
+    line-height: 30px;
+  }
+
+  .description, .company-description, .about-item-text-description, .cta-partner-description, .video-item-label, .news-text-label {
+    font-size: 14px;
+  }
+
+  .category-label {
+    font-size: 16px;
+  }
+
+  .category-description {
+    font-size: 12px;
+  }
+
+  .category-down svg {
+    width: 41px;
+    height: 41px;
+  }
+
+  .category-item {
+    height: 193px;
+    padding: 20px 16px;
+  }
+  
+  .categories-wrapper {
+    row-gap: 10px;
+  }
+
+  .content {
+    width: calc(100% / 2 - 5px);
+  }
+
+  .company-label, .partnership-label, .cta-partner-label, .video-review-label, .sertificates-label, .news-label {
+    font-size: 20px;
+  }
+
+  .third-section-down {
+    padding: 20px;
+  }
+
+  .about-item-text-label {
+    font-size: 16px;
+  }
+
+  .four-section {
+    gap: 24px;
+  }
+
+  .content-category-wrapper {
+    margin-top: 0;
+  }
+
+  .invite-partnership-mob {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .invite-partnership-mob-content {
+    width: 100% !important;
+  }
+
+  .partner-item {
+    width: 100%;
+    height: auto;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .partner-item-icon {
+    width: 18.45%;
+    min-width: 70px;
+  }
+
+  .partner-item-label {
+    font-size: 16px;
+  }
+
+  .partner-item-description {
+    font-size: 12px;
+  }
+
+  .partner-item-up svg {
+    width: 41px;
+    height: 41px;
+  }
+
+  .cta-wrapper {
+    padding: 21px 16px 0 21px;
+  }
+
+  .cta-partner-img {
+    margin: 0;
+  }
+
+  .certificates-item {
+    width: 34%;
+    min-width: 105px;
+  }
+
+  .news-text-description {
+    display: none;
+  }
+
+  .news-item-img {
+    border-radius: 10px;
+  }
+
+  .contacts-wrapper {
+    margin: 0 !important;
+  }
+
+  .five-section, .six-section {
+    gap: 10px;
+  }
+
+  .seven-section {
+    padding-bottom: var(--padding-blocks);
+  }
+
+}
+
+
