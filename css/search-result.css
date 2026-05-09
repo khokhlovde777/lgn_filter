@@ -203,7 +203,8 @@
 }
 
 .result-section__table {
-  width: 100%;
+  width: var(--width-container);
+  max-width: var(--max-width);
   margin-top: 30px;
   padding: 30px;
   background-color: white;

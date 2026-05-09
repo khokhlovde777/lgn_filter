@@ -304,6 +304,7 @@
     align-items: start;
     justify-content: center;
     gap: 16px;
+    padding: 20px;
   }
 
   .about-item {
