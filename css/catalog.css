@@ -86,7 +86,6 @@
 .info-section__right {
   width: 42.36vw;
   max-width: 610px;
-  min-width: 374px;
   border-radius: var(--big-border-radius);
 }
 

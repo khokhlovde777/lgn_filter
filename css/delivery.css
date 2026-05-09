@@ -128,3 +128,22 @@
   }
 
 }
+
+@media (max-width: 610px) {
+  .info-delivery__title {
+    font-size: 20px;
+  }
+
+  .method-card__title {
+    font-size: 18px;
+  }
+
+  .method-card__description, .method-card__advantage-text {
+    font-size: 14px;
+  }
+
+  .method-card__img {
+    width: 12.57%;
+    min-width: 47px;
+  }
+}
