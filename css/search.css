@@ -135,10 +135,6 @@ input.search-input {
 
 @media (max-width: 768px) {
 
-  .search-wrapper {
-
-  }
-
   .search-wrapper-up {
     flex-direction: column;
     align-items: start;
@@ -188,13 +184,10 @@ input.search-input {
     font-size: 14px;
   }
 
-  .search-buttons-wrapper {
-    flex-direction: column;
-  }
-
   .btn-search-number, .btn-search-auto {
     width: 100%;
     font-size: 13px;
+    padding: 13px;
   }
 
   .search-by-number {

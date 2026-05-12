@@ -655,8 +655,13 @@
 }
 
 @media (max-width: 428px) {
+
   .head-texts {
-    grid-template-columns: none;
+    gap: 10px;
+  }
+  
+  .head-item {
+    width: auto;
   }
 
   .head-item__wrapper {

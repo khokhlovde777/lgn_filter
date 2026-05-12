@@ -96,6 +96,7 @@
 
 .slide-item__img {
   width: 100%;
+  opacity: .5;
 }
 
 .gallery-sliders__imgs.swiper-initialized {
@@ -140,6 +141,10 @@
 .gallery-sliders__imgs .swiper-slide-thumb-active .slide-item {
   border: 2px solid #364153;
   border-radius: 10px;
+}
+
+.swiper-slide-thumb-active .slide-item__img {
+  opacity: 1;
 }
 
 .item-section__product-info {
@@ -239,7 +244,6 @@
 }
 
 .variants-card.active-variant {
-  background-color: var(--background-gray-color);
   border: 1px solid #004AAD10;
 }
 
