@@ -171,11 +171,13 @@
 .label {
   font-size: 52px;
   font-weight: 500;
+  color: white;
 }
 
 .description {
   font-size: 22px;
   font-weight: 400;
+  color: white;
 }
 
 .buttons-wrapper {
@@ -261,10 +263,10 @@
   font-weight: 500;
 }
 
-.company-video {
+.company-img {
   pointer-events: none;
   width: 610px;
-  height: 423px;
+  /* height: 423px; */
   border-radius: var(--big-border-radius);
   object-fit: cover;
 }
@@ -329,18 +331,15 @@
   text-align: start;
 }
 
-.partner-item:hover {
+.categories-wrapper .content:nth-child(5) .partner-item {
   background-color: var(--blue-color);
   color: white;
 }
 
-.partner-item:hover .partner-item-up svg circle {
-  stroke: white !important;
-}
-
-.partner-item:hover .partner-item-up svg path {
-  fill: white !important;
-}
+/* .partner-item:hover {
+  background-color: var(--blue-color);
+  color: white;
+} */
 
 .partner-item-up {
   display: flex;
@@ -384,8 +383,8 @@
   bottom: 0;
   left: 44px; */
   margin-left: 44px;
-  width: 26.8vw;
-  max-width: 386px;
+  width: 30.35vw;
+  max-width: 437px;
   min-width: 221px;
 }
 
@@ -490,6 +489,8 @@
 
 .certificates-img {
   width: 100%;
+  border-radius: 20px;
+  border: 1px solid #EFF1F6;
 }
 
 .news-item {
@@ -539,7 +540,7 @@
     max-width: none;
   }
 
-  .company-video {
+  .company-img {
     width: 100%;
   }
 }
@@ -680,6 +681,7 @@
   
   .btn-catalog {
     width: 100%;
+    background-color: #FFB282;
   }
 
   .label {
