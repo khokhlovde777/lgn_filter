@@ -9,6 +9,11 @@
   overflow: hidden;
 }
 
+.first-section {
+  background-color: var(--blue-color);
+  z-index: -1;
+}
+
 .second-section, .four-section {
   overflow: visible;
   gap: 20px;
@@ -59,7 +64,7 @@
   justify-content: center;
   padding-bottom: 40px;
 }
-
+/* 
 .overlay {
   position: absolute;
   top: 0;
@@ -79,8 +84,8 @@
   opacity: 1;
   visibility: visible;
   z-index: -1;
-}
-
+} */
+/* 
 @keyframes slideOutLeft {
   0% {
     transform: translateX(0);
@@ -109,49 +114,14 @@
   opacity: 1;
   visibility: visible;
   z-index: -1;
-}
-
-/* Адаптивность для мобильных устройств */
-/* @media (max-width: 768px) {
-  .label {
-    font-size: 32px;
-  }
-  
-  .description {
-    font-size: 18px;
-  }
-  
-  .btn-catalog {
-    padding: 12px 32px;
-    height: 52px;
-  }
-  
-  .btn-label {
-    font-size: 14px;
-  }
-  
-  .buttons-wrapper {
-    margin-top: 32px;
-  }
-  
-  .text-wrapper {
-    gap: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .label {
-    font-size: 24px;
-  }
-  
-  .description {
-    font-size: 16px;
-  }
-  
-  .content-area {
-    padding: 0 20px;
-  }
 } */
+
+.background-colors {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
 .content-area {
   width: var(--width-container);
@@ -159,7 +129,10 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: space-between;
+  justify-content: center;
+  z-index: 1;
+  position: relative;
+  height: 100%;
 }
 
 .text-wrapper {
@@ -193,7 +166,25 @@
   color: white;
 }
 
-.circles-wrapper {
+.back-img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -100px;
+  width: 51.46%;
+  max-width: 741px;
+}
+
+@media (max-width: 1096px) {
+  .back-img {
+    bottom: 74px;
+    top: auto;
+    transform: none;
+    right: 0;
+  }
+}
+
+/* .circles-wrapper {
   display: flex;
   align-items: start;
   justify-content: center;
@@ -228,7 +219,7 @@
   100% {
     transform: scale(1);
   }
-}
+} */
 
 .content-wrapper {
   width: var(--width-container);
@@ -663,16 +654,33 @@
 
 @media (max-width: 610px) {
 
+  .back-img {
+    position: relative;
+    width: 100%;
+    bottom: auto;
+  }
+
+  .background-colors {
+    width: auto;
+  }
+
   .first-section {
     align-items: start;
     box-sizing: border-box;
     padding-top: 108px;
     padding-bottom: 100px;
+    height: 100%;
+    max-height: none;
   }
 
   .content-area {
     height: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
 
+  .buttons-wrapper {
+    margin-top: 20px;
   }
 
   .circles-wrapper {

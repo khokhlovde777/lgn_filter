@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const backgrounds = [
         '/src/main/bg_1.png',
-        '/src/main/bg_2.png',
-        '/src/main/bg_3.png',
-        '/src/main/bg_4.png'
+        // '/src/main/bg_2.png',
+        // '/src/main/bg_3.png',
+        // '/src/main/bg_4.png'
     ];
     
     const firstSection = document.querySelector('.first-section');

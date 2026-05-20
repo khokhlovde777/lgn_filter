@@ -110,6 +110,10 @@
   gap: 30px;
 }
 
+.specification-img {
+  width: 100%;
+}
+
 .specification__title {
   font-size: 40px;
   font-weight: 500;
