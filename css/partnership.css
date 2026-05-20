@@ -391,19 +391,19 @@
 }
 
 .cta-taxi {
-  background-image: url("/src/partnership/back_1.png");
+  background-image: url("../src/partnership/back_1.png");
 }
 
 .cta-mrqtpls {
-  background-image: url("/src/partnership/back_2.png");
+  background-image: url("../src/partnership/back_2.png");
 }
 
 .cta-brand {
-  background-image: url("/src/partnership/back_3.png");
+  background-image: url("../src/partnership/back_3.png");
 }
 
 .cta-your--size {
-  background-image: url("/src/partnership/back_4.png");
+  background-image: url("../src/partnership/back_4.png");
 }
 
 .partnersip-cta {
