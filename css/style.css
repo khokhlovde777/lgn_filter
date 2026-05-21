@@ -141,6 +141,8 @@ a:focus {
   transition: transform 0.3s ease;
   font-size: 16px;
   font-weight: 500;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (max-width: 610px) {
