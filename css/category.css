@@ -50,6 +50,7 @@
   font-size: 16px;
   font-weight: 400;
   color: var(--gray-text);
+  opacity: .8;
 }
 
 .category-img {
@@ -83,6 +84,10 @@
 
 .category-item:hover .category-item-anim-img {
   transform: rotate(45deg) translate(-60px, -10px);
+}
+
+.category-item:hover .category-description {
+  color: white;
 }
 
 /* SVG анимация при ховере */
