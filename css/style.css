@@ -143,6 +143,15 @@ a:focus {
   font-weight: 500;
   color: inherit;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+}
+
+button:hover,
+button:active,
+button:focus {
+  color: inherit;
+  background: none;
+  outline: none;
 }
 
 @media (max-width: 610px) {
