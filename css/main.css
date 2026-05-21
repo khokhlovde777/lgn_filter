@@ -168,7 +168,7 @@
 @media (min-width: 1670px) {
   .btn-catalog {
     background-color: var(--orange-color);
-    background-color: #FFB282;
+    /* background-color: #FFB282; */
   }
 }
 
@@ -695,7 +695,7 @@
   
   .btn-catalog {
     width: 100%;
-    background-color: #FFB282;
+    /* background-color: #FFB282; */
   }
 
   .label {
