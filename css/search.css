@@ -14,6 +14,7 @@
 
 .search-wrapper {
   margin-top: -70px;
+  z-index: 4;
 }
 
 .search-wrapper-up {
