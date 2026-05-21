@@ -146,6 +146,11 @@ a:focus {
   text-decoration: none;
 }
 
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
 button:hover,
 button:active,
 button:focus {
