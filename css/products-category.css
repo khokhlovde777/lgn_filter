@@ -169,6 +169,7 @@
   align-items: center;
   justify-content: center;
   background-color: var(--background-gray-color);
+  padding-bottom: 94px;
 }
 
 .popular-position {
@@ -362,6 +363,10 @@
   .specification__item-texts {
     align-items: start;
     text-align: start;
+  }
+
+  .four-section {
+    padding-bottom: 49px;
   }
 
 }
