@@ -204,16 +204,8 @@ input.search-input {
   }
 }
 
-/* @media (max-width: 690px) {
-
-  .search-buttons-wrapper {
-    flex-direction: column;
-    padding: 30px;
+@media (max-width: 428px) {
+  input.search-input {
+    padding-left: 16px;   
   }
-
-  .btn-search-number, .btn-search-auto {
-    width: 100%;
-    font-size: 13px;
-  }
-
-} */
+}
