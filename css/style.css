@@ -94,6 +94,17 @@ html::-webkit-scrollbar {
   display: none;
 }
 
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none !important;
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
 
 
 
