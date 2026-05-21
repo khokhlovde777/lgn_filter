@@ -144,6 +144,7 @@
   font-size: 52px;
   font-weight: 500;
   color: white;
+  line-height: 110%;
 }
 
 .description {
@@ -179,6 +180,13 @@
   right: -100px;
   width: 59.76%;
   max-width: 741px;
+  z-index: -1;
+}
+
+@media (max-width: 1292px) {
+  .back-img {
+    transform: translateY(-50%);
+  }
 }
 
 @media (max-width: 1096px) {
@@ -550,6 +558,7 @@
 
   .label {
     font-size: 45px;
+    line-height: 95%;
   }
 
   .buttons-wrapper {
