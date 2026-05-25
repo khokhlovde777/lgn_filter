@@ -166,13 +166,6 @@ img {
   user-select: none;
 }
 
-button:hover,
-button:active,
-button:focus {
-  color: inherit;
-  outline: none;
-}
-
 @media (max-width: 610px) {
   .btn {
     font-size: 14px;
