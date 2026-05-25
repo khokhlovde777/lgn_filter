@@ -756,7 +756,7 @@
   }
 
   .four-section {
-    gap: 24px;
+    gap: 0;
   }
 
   .content-category-wrapper {
@@ -800,6 +800,7 @@
 
   .cta-wrapper {
     padding: 21px 16px 0 21px;
+    margin-top: 20px;
   }
 
   .cta-partner-img {
