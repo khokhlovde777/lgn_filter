@@ -170,7 +170,6 @@ button:hover,
 button:active,
 button:focus {
   color: inherit;
-  background: none;
   outline: none;
 }
 
