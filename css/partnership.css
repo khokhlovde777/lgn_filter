@@ -508,6 +508,7 @@
   .info-section__left {
     width: var(--width-container);
     max-width: none;
+    gap: 12px;
   }
 
   .info-section__right {

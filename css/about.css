@@ -376,6 +376,11 @@
 }
 
 @media (max-width: 610px) {
+  
+  .content-wrapper {
+    gap: 16px;
+  }
+
   .company-label, .third-section__label, .sertificates-label, .cta-partner-label, .video-review-label, .sertificates-label {
     font-size: 20px;
   }
