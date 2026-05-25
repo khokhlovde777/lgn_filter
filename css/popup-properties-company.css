@@ -73,4 +73,18 @@
   .popup-properties__wrapper {
     width: var(--width-container);
   }
+  
+  .popup-properties__label {
+    font-size: 20px;
+  }
+
+  .info-card__title {
+    font-size: 16px;
+  }
+
+  .info-card__description {
+    font-size: 14px;
+  }
+
+
 }
