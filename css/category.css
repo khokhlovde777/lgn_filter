@@ -143,6 +143,11 @@
 }
 
 @media (max-width: 610px) {
+
+  .content-category-wrapper {
+    margin-top: 0;
+  }
+
   .category-label {
     font-size: 16px;
   }
