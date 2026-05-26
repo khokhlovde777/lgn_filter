@@ -417,6 +417,10 @@
   transition: all .3s ease;
 }
 
+.card-content__title--car-text, .card-content__title--car-text {
+  color: black;
+}
+
 /* */
 
 .card-content__row--car-brand.active-car-brand {

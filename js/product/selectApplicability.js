@@ -220,10 +220,10 @@ document.addEventListener('DOMContentLoaded', function() {
         removeActiveClassesFromModelsForBrand(brandId);
       } 
       else {
-        removeActiveClassesFromAllBrands();
-        hideAllModelContainers();
-        hideAllInfoTables();
-        removeActiveClassesFromAllModels();
+        // removeActiveClassesFromAllBrands();
+        // hideAllModelContainers();
+        // hideAllInfoTables();
+        // removeActiveClassesFromAllModels();
         addActiveClassesToBrand(this);
         showModelContainersForBrand(brandId);
       }
@@ -253,22 +253,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const parentModelsContainer = this.closest('.card-content--car-models');
             
             if (!isTableVisible) {
-              if (parentModelsContainer) {
-                const allInfoTables = parentModelsContainer.querySelectorAll('.car-info-table');
-                const allModelButtons = parentModelsContainer.querySelectorAll('.card-content__row--car-model');
+              // if (parentModelsContainer) {
+              //   const allInfoTables = parentModelsContainer.querySelectorAll('.car-info-table');
+              //   const allModelButtons = parentModelsContainer.querySelectorAll('.card-content__row--car-model');
                 
-                allInfoTables.forEach(table => {
-                  if (table !== infoTable && table.style.display !== 'none') {
-                    animateCollapseTable(table);
-                  }
-                });
+              //   allInfoTables.forEach(table => {
+              //     if (table !== infoTable && table.style.display !== 'none') {
+              //       animateCollapseTable(table);
+              //     }
+              //   });
                 
-                allModelButtons.forEach(btn => {
-                  if (btn !== this) {
-                    removeActiveClassesFromModel(btn);
-                  }
-                });
-              }
+              //   allModelButtons.forEach(btn => {
+              //     if (btn !== this) {
+              //       removeActiveClassesFromModel(btn);
+              //     }
+              //   });
+              // }
               
               animateExpandTable(infoTable);
               addActiveClassesToModel(this);
