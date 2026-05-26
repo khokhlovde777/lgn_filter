@@ -145,7 +145,7 @@
 @media (max-width: 610px) {
 
   .content-category-wrapper {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .category-label {

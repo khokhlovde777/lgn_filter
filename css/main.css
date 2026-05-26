@@ -669,6 +669,10 @@
 
 @media (max-width: 610px) {
 
+  .second-section {
+    gap: 10px;
+  }
+
   .back-img {
     position: relative;
     width: 100%;
