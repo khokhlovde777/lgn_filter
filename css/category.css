@@ -49,6 +49,7 @@
 .category-description {
   font-size: 16px;
   font-weight: 400;
+  text-align: start;
   color: var(--gray-text);
   opacity: .8;
 }
