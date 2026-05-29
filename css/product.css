@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 36.53%;
+  /* width: 36.53%; */
   max-width: 453px;
   min-width: 300px;
 }
@@ -312,6 +312,10 @@
   border-radius: var(--big-border-radius);
   background-color: white;
   width: 100%;
+}
+
+.card-margin {
+  margin-top: 20px;
 }
 
 .card-label {

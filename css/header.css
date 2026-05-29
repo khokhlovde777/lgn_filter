@@ -57,6 +57,8 @@
 .header-tel-text, .header-email-text, .header-social-network-link-max, .header-social-network-link-telegram {
   font-size: 14px;
   font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.15px;
 }
 
 .header-social-network {
@@ -108,6 +110,7 @@
 .header-link-catalog, .header-link-product, .header-link-about, .header-link-contacts, .header-link-form {
   font-size: 16px;
   font-weight: 400;
+  line-height: 25px;
 }
 
 .header__menu-wrapper {
@@ -246,7 +249,7 @@
   }
 
   .header-logo-wrapper {
-    gap: 30px;
+    gap: 17px;
   }
 
   .header-burger {
@@ -289,7 +292,8 @@
   }
 
   .header-button__form {
-    padding: 8.5px 20px;
+    padding: 5px 19px;
+    line-height: 25px;
   }
 
   .menu__item, .menu__btn {

@@ -2,8 +2,8 @@
   width: var(--width-container);
   box-sizing: border-box;
   max-width: var(--max-width);
-  padding: 32px 40px;
-  background-color: #FAFAFB;
+  padding: 28px 35px 36px 45px;
+  background-color: white;
   border-radius: var(--big-border-radius);
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 }
 
 .search-wrapper {
-  margin-top: -70px;
+  margin-top: -64px;
   z-index: 4;
 }
 
@@ -27,6 +27,7 @@
 .search-label {
   font-size: 30px;
   font-weight: 600;
+  line-height: 36px;
 }
 
 .search-buttons-wrapper {
@@ -40,6 +41,8 @@
   background-color: white;
   padding: 13px 38px;
   border-radius: var(--big-border-radius);
+  font-size: 15px;
+  line-height: 19px;
 }
 
 .btn-search-number.active,
@@ -62,6 +65,7 @@
   height: 62px;
   border: 1px solid #D1D5DC;
   border-radius: var(--btn-border-radius);
+  box-sizing: border-box;
 }
 
 .search-input-car-model, .search-input-car-brend {
@@ -115,7 +119,7 @@ input.search-input {
 
 .btn-search-enter {
   width: 100%;
-  height: 64px;
+  height: 62px;
   max-width: 232px;
   background-color: var(--orange-color);
   border-radius: var(--btn-border-radius);
@@ -182,7 +186,8 @@ input.search-input {
   }
 
   .search-label {
-    font-size: 14px;
+    font-size: 18px;
+    line-height: 23px;
   }
 
   .btn-search-number, .btn-search-auto {
