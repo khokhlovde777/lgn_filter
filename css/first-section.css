@@ -107,7 +107,7 @@
   position: absolute;
   max-width: 109px;
   right: 0;
-  bottom: 95px;
+  bottom: 82px;
 }
 
 @media (max-width: 768px) {
@@ -118,6 +118,11 @@
 }
 
 @media (max-width: 610px) {
+
+  .first-section {
+    height: 450px;
+  }
+  
   .first-section__content {
     justify-content: start;
     box-sizing: border-box;
