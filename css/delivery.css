@@ -76,6 +76,8 @@
   font-size: 16px;
   font-weight: 400;
   color: var(--gray-text);
+  opacity: .8;
+  line-height: 24px;
 }
 
 .method-card__devider {
@@ -103,6 +105,11 @@
 }
 
 @media (max-width: 768px) {
+
+  .info-delivery {
+    gap: 12px;
+  }
+
   .info-delivery__title {
     font-size: 30px;
   }
@@ -118,13 +125,26 @@
   .method-card {
     max-width: none;
     width: 100%;
-    padding: 30px;
+    padding: 25px 20px;
+    border-radius: 30px;
   }
 
   .method-card__header {
     flex-direction: row-reverse;
     width: 100%;
     justify-content: space-between;
+  }
+
+  .method-card__description, .method-card__advantage-text {
+    line-height: 18px;
+  }
+
+  .method-card__text {
+    gap: 7px;
+  }
+
+  .method-card__title {
+    font-weight: 500;
   }
 
 }

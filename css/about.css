@@ -84,6 +84,7 @@
   font-size: 20px;
   font-weight: 500;
   letter-spacing: -1px;
+  line-height: 25px;
 }
 
 .about-item-text-description {
@@ -108,7 +109,7 @@
   width: var(--width-container);
   max-width: var(--max-width);
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   gap: 51px;
 }
@@ -145,6 +146,7 @@
   font-size: 16px;
   font-weight: 400; 
   color: var(--gray-text);
+  line-height: 24px;
 }
 
 .third-section__results {
@@ -264,6 +266,11 @@
   border-radius: var(--btn-border-radius);
 }
 
+.company-description {
+  font-size: 16px;
+  color: var(--gray-text);
+}
+
 @media (max-width: 1220px) {
   .third-section-up {
     flex-direction: column;
@@ -282,6 +289,7 @@
   .third-section__content {
     flex-direction: column-reverse;
     max-width: none;
+    gap: 20px;
   }
 
   .third-section__img {
@@ -291,6 +299,7 @@
 
   .third-section__info {
     width: 100%;
+    gap: 16px;
   }
 
 }
@@ -399,6 +408,7 @@
 
   .third-section__description {
     font-size: 14px;
+    line-height: normal;
   }
 
   .result__sum {
