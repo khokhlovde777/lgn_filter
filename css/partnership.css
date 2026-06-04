@@ -92,11 +92,12 @@
   gap: 40px;
   width: var(--width-container);
   max-width: var(--max-width);
+  margin-top: 20px;
 }
 
 .info-section {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   /* gap: 50px; */
   width: var(--width-container);
@@ -108,8 +109,9 @@
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 34px;
+  gap: 26px;
   max-width: 578px;
+  margin-top: 25px;
 }
 
 .info-section__header {
