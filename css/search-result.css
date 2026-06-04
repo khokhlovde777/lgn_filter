@@ -76,10 +76,6 @@
   transform: scale(1.01);
 } */
 
-.btn--model-info:active {
-  transform: scale(0.99);
-}
-
 .head-texts {
   display: flex;
   align-items: center;
@@ -197,6 +193,10 @@
 
 .head-item__title.head-item__text-active, .head-item__value.head-item__text-active {
   color: white;
+}
+
+.head-item__arrow.head-item__arrow-active path {
+  stroke: white;
 }
 
 .result-section__table {

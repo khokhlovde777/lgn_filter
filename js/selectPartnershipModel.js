@@ -3,28 +3,18 @@ document.addEventListener('DOMContentLoaded', function() {
   const modelInfoOptions = document.querySelectorAll('.model-info__option');
 
   // Функция для удаления active со всех элементов
-  function removeActiveFromAll(options) {
-    options.forEach(option => {
-      // Находим кнопку (model-info__head)
-      const head = option.querySelector('.model-info__head');
-      // Находим body
-      const body = option.querySelector('.model-info__body');
-      // Находим все элементы с классами head-item__title и head-item__value
-      const titles = option.querySelectorAll('.head-item__title');
-      const values = option.querySelectorAll('.head-item__value');
-      // Находим стрелку
-      const arrow = option.querySelector('.head-item__arrow');
-      
-      // Удаляем классы
-      if (head) head.classList.remove('active-model-info__head');
-      if (body) body.classList.remove('active-model-info__body');
-      titles.forEach(title => title.classList.remove('head-item__text-active'));
-      values.forEach(value => value.classList.remove('head-item__text-active'));
-      if (arrow) arrow.classList.remove('head-item__arrow-active');
-      
-      // Удаляем класс active__option с самого .model-info__option
-      // option.classList.remove('active__option');
-    });
+  function removeActiveFromOption(option) {
+    const head = option.querySelector('.model-info__head');
+    const body = option.querySelector('.model-info__body');
+    const titles = option.querySelectorAll('.head-item__title');
+    const values = option.querySelectorAll('.head-item__value');
+    const arrow = option.querySelector('.head-item__arrow');
+    
+    if (head) head.classList.remove('active-model-info__head');
+    if (body) body.classList.remove('active-model-info__body');
+    titles.forEach(title => title.classList.remove('head-item__text-active'));
+    values.forEach(value => value.classList.remove('head-item__text-active'));
+    if (arrow) arrow.classList.remove('head-item__arrow-active');
   }
 
   // Функция для добавления active на нужные элементы
@@ -62,11 +52,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const isActive = button.classList.contains('active-model-info__head');
         
         // Удаляем active со всех опций
-        removeActiveFromAll(modelInfoOptions);
+        // removeActiveFromAll(modelInfoOptions);
         
         // Если эта опция не была активна, делаем её активной
         if (!isActive) {
+        // Если не активна - открываем
           addActiveToOption(option);
+        } else {
+          // Если активна - закрываем (только её, не трогая другие)
+          removeActiveFromOption(option);
         }
         // Если была активна - закрываем её (уже закрыто через removeActiveFromAll)
       });

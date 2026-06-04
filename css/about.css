@@ -168,6 +168,7 @@
   font-size: 32px;
   color: var(--blue-color);
   font-weight: 500;
+  line-height: 25px;
 }
 
 .certificates-section {
@@ -200,6 +201,8 @@
 
 .certificates-img {
   width: 100%;
+  border-radius: 20px;
+  border: 1px solid #EFF1F6;
 }
 
 .cta-wrapper {

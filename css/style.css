@@ -179,7 +179,10 @@ img {
   }
 }
 
-
 .btn:active {
   transform: var(--transform-scale-active);
+}
+
+.no-transform-btn {
+  transform: none !important;
 }
