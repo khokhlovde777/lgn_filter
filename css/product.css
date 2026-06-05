@@ -385,14 +385,6 @@
   font-weight: 500;
 }
 
-.btn-applicability:hover {
-  transform: scale(1.01);
-}
-
-.btn-applicability:active {
-  transform: scale(0.99);
-}
-
 .applicability-wrapper-anim {
   transition: all .3s ease;
 }
